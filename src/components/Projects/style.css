@@ -1,0 +1,48 @@
+.projects {
+    padding: 128px 64px 0px;
+}
+
+.projects__list {
+    padding-top: 128px;
+    display: flex;
+    flex-direction: column;
+    gap: 128px;
+}
+
+.projects__item {
+    display: flex;
+    gap: 32px;
+}
+
+.projects__info {
+    display: flex;
+    flex-direction: column;
+
+    padding: 24px 32px;
+
+    background-color: white;
+
+    width: 100%;
+
+    height: fit-content;
+}
+
+.projects__date {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+
+    letter-spacing: -0.02em;
+}
+
+.projects__text {
+    padding-top: 39px;
+    padding-bottom: 99px;
+
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+    /* or 58px */
+
+    letter-spacing: -0.02em;
+}

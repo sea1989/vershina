@@ -1,0 +1,50 @@
+.help {
+    background-color: blue;
+    background-image: url(../../assets/img/bg2.jpg);
+    background-size: cover;
+
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 120%;
+
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+}
+
+.help__wrapper {
+    padding: 64px;
+    padding-bottom: 94px;
+}
+
+.help__title {
+    padding-top: 229px;
+    padding-left: 116px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 120%;
+
+    letter-spacing: -0.02em;
+}
+
+.help__description {
+    display: flex;
+    margin-left: 17%;
+    padding-top: 16px;
+    padding-bottom: 64px;
+    max-width: 862px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 120%;
+
+    letter-spacing: -0.02em;
+}
+
+.help button {
+    margin: 0 auto;
+}

@@ -69,3 +69,17 @@ img {
     font-size: 48px;
     line-height: 120%;
 }
+
+.button-more {
+    display: flex;
+
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    text-decoration: underline;
+
+    letter-spacing: -0.02em;
+
+    border: none;
+    background: none;
+}
