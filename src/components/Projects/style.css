@@ -50,3 +50,21 @@
 .projects__item img {
     width: 65%;
 }
+
+@media (max-width: 1024px) {
+    .projects__date {
+        font-size: 12px;
+    }
+
+    .projects__text {
+        font-size: 24px;
+    }
+
+    .projects__item img {
+        max-height: 266px;
+    }
+
+    .projects__list {
+        gap: 64px;
+    }
+}
