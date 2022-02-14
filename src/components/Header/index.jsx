@@ -11,7 +11,13 @@ export default function Header() {
     <header className='header'>
       <div className='header__wrapper container'>
         <div className='header__top'>
-          <img src={LogoDesktop} width='191px' height='56px' alt='logo' />
+          <img
+            className='header__logo'
+            src={LogoDesktop}
+            width='191px'
+            height='56px'
+            alt='logo'
+          />
 
           <nav class='menu'>
             <a href='#' className='menu__doc'>
@@ -23,15 +29,17 @@ export default function Header() {
           </nav>
         </div>
 
-        <h1> АНО «Вершина» – межмуниципальный ресурсный центр.</h1>
+        <div className='header__main'>
+          <h1> АНО «Вершина» – межмуниципальный ресурсный центр.</h1>
 
-        <p className='header__description'>
-          Мы принимаем участие в социальных и благотворительных программах
-          Приморского края и России, активно откликаемся на острые проблемы,
-          следим за современными трендами и потребностями.
-        </p>
+          <p className='header__description'>
+            Мы принимаем участие в социальных и благотворительных программах
+            Приморского края и России, активно откликаемся на острые проблемы,
+            следим за современными трендами и потребностями.
+          </p>
 
-        <MyButton>Помочь людям</MyButton>
+          <MyButton>Помочь людям</MyButton>
+        </div>
 
         <button className='button-up'>
           <Up />

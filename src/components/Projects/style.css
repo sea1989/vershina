@@ -22,7 +22,7 @@
 
     background-color: white;
 
-    width: 100%;
+    width: 31%;
 
     height: fit-content;
 }
@@ -45,4 +45,8 @@
     /* or 58px */
 
     letter-spacing: -0.02em;
+}
+
+.projects__item img {
+    width: 65%;
 }
