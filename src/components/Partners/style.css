@@ -1,32 +1,43 @@
 .partners {
-    padding: 128px 64px;
+  padding: 128px 64px;
 }
 
 .partners__list {
-    display: flex;
-    gap: 32px;
-    overflow: hidden;
+  display: flex;
+  gap: 32px;
+  overflow: hidden;
 
-    padding-top: 59px;
+  padding-top: 59px;
 }
 
 .partners__item {
-    display: flex;
+  display: flex;
 
-    background-color: white;
+  background-color: white;
 
-    width: 256px;
-    height: 128px;
+  width: 256px;
+  min-width: 256px;
+  height: 128px;
 
-    padding: 32px;
+  padding: 32px;
 
-    gap: 14px;
+  gap: 14px;
 }
 
 .partners__title {
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 120%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 120%;
 
-    letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 768px) {
+  .partners {
+    padding: 128px 16px;
+  }
+  .partners__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
 }
