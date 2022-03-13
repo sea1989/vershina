@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 import MyButton from "../UI/button/MyButton";
-import Helpl_heart from "../../assets/img/help__heart.png";
+
 import { ReactComponent as Up } from "../../assets/img/up.svg";
 
 export default function Help() {
@@ -27,7 +27,7 @@ export default function Help() {
         {/* <button className='button-up'>
           <Up />
         </button> */}
-        <img src={Helpl_heart} alt="" className="help__heart" />
+        <img src='http://anovershina.ru/wp-content/uploads/2022/03/bg2.jpg' alt="" className="help__heart" />
       </div>
       <div className="help__wrapper_768px container">
         <div className="help_768px__main"> 

@@ -1,19 +1,22 @@
 import React from 'react';
 import './style.css';
 
-import LogoDesktop from '../../assets/img/logo.svg';
-import Vk from '../../assets/img/Vk.svg';
-import inst from '../../assets/img/instagram.svg';
-import odnoklassniki from '../../assets/img/Odnoklassniki.svg';
-import Fb from '../../assets/img/FB.svg';
-
+import { ReactComponent as Vk } from '../../assets/img/Vk.svg';
+import { ReactComponent as Inst } from '../../assets/img/instagram.svg';
+import { ReactComponent as Odnoklassniki } from '../../assets/img/Odnoklassniki.svg';
+import { ReactComponent as Fb } from '../../assets/img/FB.svg';
 
 export default function Footer() {
   return (
     <footer className='footer'>
       <div className='footer_top container'>
         <div className='footer__logo'>
-          <img src={LogoDesktop} width='191px' max-height='56px' alt='logo' />
+          <img
+            src='http://anovershina.ru/wp-content/uploads/2022/03/logo-footer.png'
+            width='191px'
+            max-height='56px'
+            alt='logo'
+          />
         </div>
         <div className='footer__info'>
           <p className='footer__title'>Информация об организации</p>
@@ -87,22 +90,22 @@ export default function Footer() {
         <ul className='footer__social_net_list'>
           <li className='footer__image'>
             <a href='#'>
-              <img src={inst} alt='instagram' />
+              <Inst />
             </a>
           </li>
           <li className='footer__image'>
             <a href='#'>
-              <img src={Vk} alt='Vk' />
+              <Odnoklassniki />
             </a>
           </li>
           <li className='footer__image'>
             <a href='#'>
-              <img src={odnoklassniki} alt='Odnoklasniki' />
+              <Vk />
             </a>
           </li>
           <li className='footer__image'>
             <a href='#'>
-              <img src={Fb} alt='Facebook' />
+              <Fb />
             </a>
           </li>
         </ul>

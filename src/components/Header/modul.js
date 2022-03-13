@@ -7,4 +7,3 @@ burger.onclick = function (){
 close_btn.onclick = function (){
     menu.style.display = "none";
 }
-close_btn

@@ -5,7 +5,7 @@ import About from '../About/About';
 import Projects from '../Projects/Projects';
 import Partners from '../Partners/Partners';
 import Help from '../Help';
-import Modal from '../Modal/Modal';
+//import Modal from '../Modal/Modal';
 
 //import LogoDesktop from '../../assets/img/LogoDesktop.png';
 
