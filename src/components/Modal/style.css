@@ -37,6 +37,10 @@
   position: relative;
 }
 
+.modal__content img {
+  height: 320px;
+}
+
 .modal__button_close {
   position: absolute;
   display: flex;

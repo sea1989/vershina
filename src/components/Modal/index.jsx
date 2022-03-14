@@ -5,6 +5,7 @@ import { ReactComponent as CloseModal } from '../../assets/img/close-modal.svg';
 import ModuleButton from '../UI/button/ModuleButton';
 
 export default function Modal({ active, setActive, data }) {
+
   return (
     <div
       className={active ? 'modal active' : 'modal'}
@@ -15,7 +16,13 @@ export default function Modal({ active, setActive, data }) {
           <CloseModal />
         </div>
         <div className='modal__slider'>
-          <img src={data.image} alt='logo_projects' width='864px' height='554px' className='modal__slide' />
+          <img
+            src={data.image}
+            alt='logo_projects'
+            width='864px'
+            height='554px'
+            className='modal__slide'
+          />
           <ul className='modal__list'>
             <li className='modal__item'></li>
             <li className='modal__item'></li>

@@ -27,7 +27,7 @@ export default function Help() {
         {/* <button className='button-up'>
           <Up />
         </button> */}
-        <img src='http://anovershina.ru/wp-content/uploads/2022/03/bg2.jpg' alt="" className="help__heart" />
+        <img src='http://anovershina.ru/wp-content/uploads/2022/03/help__heart.png' alt="" className="help__heart" />
       </div>
       <div className="help__wrapper_768px container">
         <div className="help_768px__main"> 

@@ -17,7 +17,6 @@
   padding: 57px 64px 0px 64px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 938px;
 }
 .help__main {
@@ -50,6 +49,10 @@
 }
 .help__wrapper_768px {
   display: none;
+}
+
+.help .h2 {
+  margin-bottom: 229px;
 }
 
 @media (max-width: 1024px) {
@@ -99,7 +102,7 @@
     font-size: 18px;
     line-height: 120%;
     /* or 22px */
-    
+
     letter-spacing: -0.02em;
   }
   .help button {
@@ -146,8 +149,8 @@
     gap: 16px;
   }
   .help_768px__description {
-   width: 100%;
-   max-width: 640px;
+    width: 100%;
+    max-width: 640px;
     font-size: 14px;
   }
   .help button {
@@ -158,4 +161,3 @@
     margin-top: 140px;
   }
 }
-
