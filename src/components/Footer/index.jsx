@@ -90,22 +90,12 @@ export default function Footer() {
         <ul className='footer__social_net_list'>
           <li className='footer__image'>
             <a href='#'>
-              <Inst />
-            </a>
-          </li>
-          <li className='footer__image'>
-            <a href='#'>
               <Odnoklassniki />
             </a>
           </li>
           <li className='footer__image'>
             <a href='#'>
               <Vk />
-            </a>
-          </li>
-          <li className='footer__image'>
-            <a href='#'>
-              <Fb />
             </a>
           </li>
         </ul>

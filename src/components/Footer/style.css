@@ -91,7 +91,7 @@
 }
 .footer__social_net_list {
     display: flex;
-    flex: 0 1 168px;
+    flex: 0 1 60px;
     justify-content: space-between;
 }
 .mark {
