@@ -12,14 +12,17 @@ import Vk from '../../assets/img/Vk.svg';
 import inst from '../../assets/img/instagram.svg';
 import odnoklassniki from '../../assets/img/Odnoklassniki.svg';
 import Fb from '../../assets/img/FB.svg';
+import Logo from '../../assets/img/logo.svg';
+
 export default function Header() {
   return (
-    <header className='header'>
+    <header className='header' >
       <div className='header__wrapper container'>
         <div className='header__top'>
           <img
             className='header__logo'
-            src='http://anovershina.ru/wp-content/uploads/2022/03/Frame.png'
+            src={Logo}
+            // src='http://anovershina.ru/wp-content/uploads/2022/03/Frame.png'
             width='191px'
             height='56px'
             alt='logo'
