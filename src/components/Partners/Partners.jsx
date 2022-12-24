@@ -53,6 +53,7 @@ const partnersData = [
 export default function Partners() {
   const [index, setIndex] = useState(3);
   const [visibleData, setVisibleData] = useState([]);
+  const [partners, setPartners] = useState([]);
 
   useEffect(() => {
     const numberOfItems = index;
@@ -66,20 +67,45 @@ export default function Partners() {
     setVisibleData(newArray);
   }, [index]);
 
+  useEffect(() => {
+    fetch('http://anovershina.ru/wp-json/wp/v2/posts?categories=4')
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        setPartners(
+          data.map((item) => ({
+            id: item.id,
+            title: item.title.rendered,
+            content: item.content.rendered,
+            image: item.acf.ava,
+          }))
+        );
+      });
+  }, []);
+
+  function extractContent(s) {
+    var span = document.createElement('span');
+    span.innerHTML = s;
+    console.log(s);
+    return span.lastElementChild.lastElementChild.href;
+  }
+
   return (
     <section className='partners container'>
       <h2 className='h2'>Партнёры центра</h2>
 
       <ul className='partners__list'>
-        {visibleData.map((item) => (
-          <li className='partners__item'>
-            <img src={item.image} width='64px' height='64px' alt='foto' />
-            <span className='partners__title'>{item.title}</span>
-          </li>
+        {partners.map((item) => (
+          <a href={extractContent(item.content)}>
+            <li className='partners__item'>
+              <img src={item.image} height='64px' alt='foto' />
+              <span className='partners__title'>{item.title}</span>
+            </li>
+          </a>
         ))}
       </ul>
 
-      <button
+      {/* <button
         className={
           index === partnersData.length ? 'visually-hidden' : 'button-more'
         }
@@ -92,7 +118,7 @@ export default function Partners() {
         onClick={() => setIndex(3)}
       >
         Скрыть
-      </button>
+      </button> */}
     </section>
   );
 }
